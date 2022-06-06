@@ -1,0 +1,451 @@
+* { font-family: "Times New Roman","Microsoft YaHei"; font-size: 14px; color: #ffffff; }
+QTabWidget{ font-family: "Times New Roman","Microsoft YaHei"; font-size: 12px; color: #ffffff; }
+QListWidget{ font-family: "Times New Roman","Microsoft YaHei"; font-size: 12px; color: #ffffff; }
+
+QMainWindow { border: none; background: #000000; }
+QMainWindow::separator { background: transparent; width: 2px; }
+QWidget { border: none; background: #000000; }
+
+/**Custom dialog**/
+CustomDialog QLabel { background: transparent; }
+CustomDialog #TitleWidget { border-image: url("../../resources/images/black/QDialog/title.png") 0 2 0 21; border-width: 0 2 0 21; padding: 0 -2 0 -21; }
+CustomDialog[translucent="false"] #TitleWidget { background: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0); border-image: none; padding: 0; border-bottom: 0px solid white;}
+CustomDialog #IconLabel { min-width: 18px; min-height: 18px; image: url("../../resources/images/black/Icon/array.png"); padding-left: 20px; }
+CustomDialog #TitleLabel { min-height: 36px; padding-left: 4px; font-size: 20px; }
+CustomDialog #CloseBtn { min-width: -1px; width: 30px; height: 24px; border-image: url("../../resources/images/black/QDialog/button_close.png"); margin-right: 6px; }
+CustomDialog #CloseBtn:hover { border-image: url("../../resources/images/black/QDialog/button_close_hover.png"); }
+CustomDialog #CentralWidget { background: transparent; border-image: url("../../resources/images/black/QDialog/background.png") 2 16 16 12px; border-width: 2 16 16 12px; padding: -2 -16 -16 -12px; }
+CustomDialog[translucent="false"], CustomDialog[translucent="false"] #CentralWidget { background: #000000; border: 1px solid rgb(0, 0, 0); border-top: 0; border-image: none; padding: 0; }
+
+QCheckBox:disabled { color: #aaaaaa; background:transparent; } /*disabled*/
+QCheckBox::indicator, QGroupBox::indicator, QListView::indicator, QTableView::indicator, QTreeView::indicator { width: 14px; height: 14px; }
+QCheckBox::indicator::unchecked, QGroupBox::indicator::unchecked, QListView::indicator::unchecked, QTableView::indicator::unchecked, QTreeView::indicator::unchecked { image: url("../../resources/images/black/QCheckBox/normal.png"); }
+QCheckBox::indicator::unchecked:hover, QGroupBox::indicator::unchecked:hover, QListView::indicator::unchecked:hover, QTableView::indicator::unchecked:hover, QTreeView::indicator::unchecked:hover { image: url("../../resources/images/black/QCheckBox/hover.png"); }
+QCheckBox::indicator::unchecked:disabled, QGroupBox::indicator::unchecked:disabled, QListView::indicator::unchecked:disabled, QTableView::indicator::unchecked:disabled, QTreeView::indicator::unchecked:disabled { image: url("../../resources/images/black/QCheckBox/disabled.png"); } /*disabled*/
+QCheckBox::indicator::checked, QGroupBox::indicator::checked, QListView::indicator::checked, QTableView::indicator::checked, QTreeView::indicator::checked { image: url("../../resources/images/black/QCheckBox/selected.png"); }
+QCheckBox::indicator::checked:disabled, QGroupBox::indicator::checked:disabled, QListView::indicator::checked:disabled, QTableView::indicator::checked:disabled, QTreeView::indicator::checked:disabled { image: url("../../resources/images/black/QCheckBox/checked_disabled.png"); } /*disabled*/
+
+QColorDialog QWidget { background: transparent; }
+QColorDialog > QPushButton { min-width: 224px; }
+
+QComboBox, QDateTimeEdit, QSpinBox, QDoubleSpinBox, QLineEdit, QListView, QTableView, QTextEdit, QPlainTextEdit, QTreeView { selection-color: #ffffff; selection-background-color: #c8c8c8; }
+
+QComboBox, QDateTimeEdit, QDateEdit { height: 24px; padding: 0 1px; }
+QComboBox, QDateTimeEdit, QDateEdit { border: 1 solid rgb(80, 80, 80); border-radius: 2px; background: #000000; }
+QComboBox::drop-down, QDateTimeEdit::drop-down { border: 1 solid rgb(80, 80, 80); border-top-right-radius: 2px; border-bottom-right-radius: 2px; background: rgb(80, 80, 80); width: 18px; image:url("../../resources/images/black/QComboBox/arrow.png")}
+QComboBox::drop-down:hover, QDateTimeEdit::drop-down:hover { background: rgb(200, 200, 200); }
+QComboBox::down-arrow, QDateTimeEdit::down-arrow { image: url("../../resources/images/black/QComboBox/arrow.png"); }
+QComboBox:disabled, QLineEdit:disabled, QDateEdit:disabled, QDateTimeEdit:disabled, QTimeEdit:disabled, QSpinBox:disabled, QDoubleSpinBox:disabled  { color: #aaaaaa; border: 1 solid #505050; background: #000000; } /*disabled*/
+QComboBox::drop-down:disabled, QDateTimeEdit::up-button:disabled, QDateTimeEdit::down-button:disabled, QDateTimeEdit::drop-down:disabled, QSpinBox::up-button:disabled, QSpinBox::down-button:disabled, QDoubleSpinBox::up-button:disabled, QDoubleSpinBox::down-button:disabled { color: #aaaaaa; border: 1 solid #505050; background: #000000; } /*disabled*/
+QComboBox QAbstractItemView { background: rgb(0, 0, 0); border: 1 solid rgb(80, 80, 80); selection-background-color: rgb(200, 200, 200); }
+
+/*calendar*/
+QDateTimeEdit QToolButton { background: transparent; }
+QCalendarWidget * { color: #000000; }
+
+QDockWidget { border: none; background: #000000; }
+
+QFrame { border: none; background: transparent;}
+QFrame[frameShape="4"] { border: none; background-image: url("../../resources/images/black/Line/horizontal_dash.png"); background-repeat: repeat-x; }
+QFrame[frameShape="5"] { border: none; background-image: url("../../resources/images/black/Line/vertical_dash.png"); background-repeat: repeat-y; }
+QFrame[frameShape="4"][solid="true"] { border: none; background: transparent; border-image: url("../../resources/images/black/Line/horizontal_solid.png"); }
+QFrame[frameShape="5"][solid="true"] { border: none; background: transparent; border-image: url("../../resources/images/black/Line/vertical_solid.png"); }
+
+QGroupBox { border: 1px solid rgb(80, 80, 80); border-radius: 8px; font-size: 14px; margin-top: 10px; }
+QGroupBox::title { color: #ffffff; subcontrol-origin: margin; left: 10px }
+QGroupBox[inner="true"]::title { image: none; }
+QGroupBox:disabled::title { color: #aaaaaa; } /*disabled*/
+
+
+QHeaderView { background: transparent; }
+QTreeView QHeaderView::section, QHeaderView::section:horizontal { height: 30px; background: #3c3c3c;  }
+QTableView QHeaderView::section:horizontal { border-left: 2px dotted rgb(60, 60, 60); }
+QTableCornerButton::section {  background: #3c3c3c; }
+QTableCornerButton::section:hover { background: rgb(200, 200, 200); }
+QTreeView QHeaderView::section:hover, QHeaderView::section:horizontal:hover { background-color:rgb(200, 200, 200); color: #ffffff; }
+QHeaderView::section:vertical { width: 30px; background: #3c3c3c; padding-left: 6px; }
+QHeaderView::section:vertical:hover { background-color:rgb(200, 200, 200); color: #ffffff; }
+QHeaderView::up-arrow { width: 18px; height: 18px; background: transparent; image: url("../../resources/images/black/QSpinBox/up-arrow.png"); image-position: center; }
+QHeaderView::down-arrow { width: 18px; height: 18px; background: transparent; image: url("../../resources/images/black/QSpinBox/down-arrow.png"); image-position: center; }
+
+QLabel { border: none; background: transparent; }
+
+QLCDNumber { color: rgb(255, 255, 255); }
+
+QLineEdit, QTextEdit { border: 1px solid rgb(80, 80, 80); background: transparent; }
+QSpinBox:focus, QComboBox:focus, QLineEdit:focus, QDoubleSpinBox:focus { border: 1px solid rgb(200, 200, 200); }
+QTextEdit { padding-left: 5px; padding-top: 5px; }
+QListView { background: #000000; outline: none; }
+QTableView, QTreeView { border: none; background: #000000; alternate-background-color: rgb(200, 200, 200); outline: none; }
+CustomDialog QTableView, CustomDialog QListView, CustomDialog QTreeView  { background-color: rgb(0, 0, 0); alternate-background-color: rgb(200, 200, 200);}
+QListView::item, QTableView::item, QTreeView::item { min-height: 30px; }
+QTreeView { margin-left: -2px; }
+QTableView::item { padding: 8px 0; border-right: 2px dotted rgb(0, 0, 0); }
+QListView::item:hover, QTableView::item:hover, QTreeView::item:hover { border-image: url("../../resources/images/black/QTableWidget/hover.png"); }
+QListView::item:selected , QTableView::item:selected, QTreeView::item:selected { background: rgb(60, 60, 60); color: rgb(255, 255, 255); }
+
+QMessageBox { background: #000000; }
+
+QMenu { border: none; background: rgb(0, 0, 0); }
+QMenu::item:selected { background: rgb(60, 60, 60); }
+QMenu::item:disabled { color: #aaaaaa; background: transparent; }
+QMenu::separator { background: transparent; border-image: url("../../resources/images/black/Line/horizontal_solid.png"); height: 1px; }
+
+QProgressBar { border: none; background: #000000; }
+QProgressBar::chunk { background: #505050; margin: 0.5px; width: 10px; }
+
+QPushButton { background: transparent; }
+QPushButton { border-image: url("../../resources/images/black/QPushButton/normal.png") 5; border: 5px; padding: -5px; color:rgb( 255,255,255 ); }
+QPushButton:hover { border-image: url("../../resources/images/black/QPushButton/hover.png"); }
+QPushButton:pressed { border-image: url("../../resources/images/black/QPushButton/pressed.png"); }
+QPushButton:checked { border-image: url("../../resources/images/black/QPushButton/selected.png"); color:rgb( 255,255,0 ); }
+QPushButton:disabled  { background: transparent; color: lightgray; border-image: url("../../resources/images/black/QPushButton/disabled.png"); }
+QPushButton[empty="true"] { border-image: none;  background: transparent; }
+QPushButton[textSize="5"] { max-width: -1; }
+
+QRadioButton:disabled { color: #aaaaaa; background:transparent; } /*disabled*/
+QRadioButton::indicator { width: 14px; height: 14px; }
+QRadioButton::indicator::unchecked { image: url("../../resources/images/black/QRadioButton/normal.png"); }
+QRadioButton::indicator::unchecked:hover { image: url("../../resources/images/black/QRadioButton/hover.png"); }
+QRadioButton::indicator::unchecked:disabled { image: url("../../resources/images/black/QRadioButton/disabled.png"); } /*disabled*/
+QRadioButton::indicator::checked { image: url("../../resources/images/black/QRadioButton/selected.png"); }
+QRadioButton::indicator::checked:disabled { image: url("../../resources/images/black/QRadioButton/checked_disabled.png"); } /*disabled*/
+
+QToolButton::menu-indicator { border-width: 0px; }
+
+QScrollBar { background: #000000; border: none; }
+QScrollBar::add-page, QScrollBar::sub-page { background: transparent; }
+QScrollBar::handle { background: #3c3c3c; border: 1px solid transparent; }
+QScrollBar::horizontal { height: 9px; margin: 0 11px;}
+QScrollBar::handle:horizontal { height: 10px; min-width: 50px; }
+QScrollBar::vertical { width: 9px; margin: 11px 0; }
+QScrollBar:handle:vertical { width: 10px; min-height: 50px; }
+QScrollBar::add-line, QScrollBar::sub-line { border: 1px solid transparent; background: #505050; width: 10px; height: 10px; subcontrol-origin: margin; }
+QScrollBar::add-line:horizontal { subcontrol-position: right; }
+QScrollBar::sub-line:horizontal { subcontrol-position: left; }
+QScrollBar::add-line:vertical { subcontrol-position: bottom; }
+QScrollBar::sub-line:vertical { subcontrol-position: top; }
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal { width: 9px; height: 9px; }
+QScrollBar::left-arrow:horizontal { image: url("../../resources/images/black/QScrollBar/left-arrow.png"); }
+QScrollBar::right-arrow:horizontal { image: url("../../resources/images/black/QScrollBar/right-arrow.png"); }
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical { width: 9px; height: 9px; }
+QScrollBar::up-arrow:vertical { image: url("../../resources/images/black/QScrollBar/up-arrow.png"); }
+QScrollBar::down-arrow:vertical { image: url("../../resources/images/black/QScrollBar/down-arrow.png"); }
+
+QSizeGrip { background: transparent; border: none; }
+
+QSlider::horizontal { height: 14px; }
+QSlider::vertical { width: 14px; }
+QSlider::groove { border: 1px solid rgb(80, 80, 80); border-radius: 2px; background: rgb(0, 0, 0); }
+QSlider::groove:horizontal { height: 2px; }
+QSlider::groove:vertical { width: 2px; }
+QSlider::sub-page:horizontal { border: 1px solid rgb(80, 80, 80);  border-radius: 2px; background: #000000; }
+QSlider::add-page:vertical { border: 1px solid rgb(80, 80, 80);  border-radius: 2px; background: #000000; }
+QSlider::handle { border:none; width: 14px; height: 14px; border-radius: 7px; background: rgb(80, 80, 80); }
+QSlider::handle:horizontal {  margin: -6px 0; }
+QSlider::handle:vertical { margin: 0 -6px; }
+QSlider::groove:disabled, QSlider::sub-page:disabled, QSlider::add-page:disabled, QSlider::handle:disabled { background: #aaaaaa; }
+QSlider::groove:disabled, QSlider::sub-page:disabled, QSlider::add-page:disabled { border-color: #aaaaaa; }
+
+QSpinBox , QDoubleSpinBox, QDateTimeEdit { height: 24px; border: 1px solid rgb(80, 80, 80); border-radius: 2px; background: transparent; padding: 0 1px; }
+QSpinBox::up-button , QSpinBox::down-button ,QDoubleSpinBox::up-button, QDoubleSpinBox::down-button, QDateTimeEdit::up-button, QDateTimeEdit::down-button { border: 1px solid rgb(80, 80, 80); background: rgb(80, 80, 80); width: 18px; }
+QSpinBox::up-button:hover, QSpinBox::down-button:hover, QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover, QDateTimeEdit::up-button:hover, QDateTimeEdit::down-button:hover { background: rgb(200, 200, 200); }
+QSpinBox::up-button , QDoubleSpinBox::up-button, QDateTimeEdit::up-button{ border-top-right-radius: 2px; }
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow, QDateTimeEdit::up-arrow { image:url("../../resources/images/black/QSpinBox/up-arrow.png"); }
+QSpinBox::down-button, QDoubleSpinBox::down-button, QDateTimeEdit::down-button { border-bottom-right-radius: 2px; }
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow, QDateTimeEdit::down-arrow { image:url("../../resources/images/black/QSpinBox/down-arrow.png"); }
+
+QSplitter { width: 2px; height: 2px; }
+QSplitter::handle { background: transparent; border-image: url("../../resources/images/black/Line/vertical_solid.png"); }
+
+QStackedWidget  { background: transparent; }
+
+QStatusBar::item { border: none; }
+QStatusBar QLabel { font-size: 14px; border: none; }
+
+QTabWidget { border: none; background: transparent; }
+QTabWidget::pane { background: transparent; border: none; }
+QTabBar { background: transparent; border: none; }
+QTabBar::tab { height: 28; background: transparent; margin: 0; }
+QTabBar::tab { border-image: url("../../resources/images/black/QTabWidget/QTabBar/tab7/normal.png") 2 10 0 10; border-width: 2 10 0 10; padding: -2 3 0 3; }
+QTabBar::tab:hover { border-image: url("../../resources/images/black/QTabWidget/QTabBar/tab7/hover.png"); }
+QTabBar::tab:selected { border-image: url("../../resources/images/black/QTabWidget/QTabBar/tab7/selected.png"); }
+QTabBar::tab::first:selected { margin-left: 0px; }
+QTabBar::tab::last:selected { margin-right: 0px; }
+QTabBar::tab:!selected { margin: 2 0 -2 0; padding: -2 4 0 4; }
+QTabBar::tab:only-one { margin: 0; }
+QTabBar QToolButton { border: 1px solid rgb(80, 80, 80); background: rgb(0, 0, 0); border-image: none; width: 19px; height: 33px; }
+QTabBar QToolButton:hover { background: rgb(200, 200, 200); }
+QTabBar QToolButton:disabled { background: #aaaaaa; }
+QTabBar QToolButton::right-arrow { image: url("../../resources/images/black/QTabWidget/QTabBar/tab/right_arrow.png"); }
+QTabBar QToolButton::left-arrow { image: url("../../resources/images/black/QTabWidget/QTabBar/tab/left_arrow.png"); }
+QTabBar::tear { border-width: 0px;}
+
+QToolBox { background: transparent; }
+QToolBox::tab { height: 30px; border-image: url("../../resources/images/black/QTabWidget/QTabBar/tab/normal.png");}
+QToolBox::tab:hover { border-image: url("../../resources/images/black/QTabWidget/QTabBar/tab/hover.png"); }
+QToolBox::tab:selected { color: rgb(255, 255, 255); border-image: url("../../resources/images/black/QTabWidget/QTabBar/tab/selected.png"); }
+
+QToolTip { border: 1px solid rgb(80, 80, 80); background: #000000; }
+
+QTreeView QHeaderView::section { padding-left: 6px; }
+QTreeView::branch:has-siblings:!adjoins-item { border-image: url("../../resources/images/black/QTreeView/vline.png"); }
+QTreeView::branch:has-siblings:!has-children:adjoins-item { border-image: url("../../resources/images/black/QTreeView/branch_more.png"); }
+QTreeView::branch:!has-siblings:!has-children:adjoins-item { border-image: url("../../resources/images/black/QTreeView/branch_end.png"); }
+QTreeView::branch:has-children:closed { image: url("../../resources/images/black/QTreeView/branch_close.png"); }
+QTreeView::branch:has-children:open { image: url("../../resources/images/black/QTreeView/branch_open.png"); }
+
+IDD_FrameRecordAndReplayClass, Zoom3D { background: #000000; }
+AXianDlg{ background: #000000; max-width: 1200px; min-width: 1200px; }
+/*UpCtrl #pBar { background: #041c28; }*/
+
+/*标题 logo*/
+MainCtrl { max-width: 453px; }
+MainCtrl #LogoLabel { min-width: 48px; min-height: 37px; image: url("../../resources/images/black/Icon/logo.png"); }
+MainCtrl #LogoTitle { font-size: 30px; padding: 8px; }
+MainCtrl #LogoBackground { border-image: url("../../resources/images/black/title45.png"); }
+MainCtrl #pTabScale { min-height: 420px; }
+MainCtrl #widget_3 { margin-top: 10px; margin-bottom: 19px; } /*按钮底部件*/
+MainCtrl #widget_3 QPushButton { min-width: 96px; }
+MainCtrl #CmdShowWidget { background: #000000; }
+MainCtrl #CmdShowWidget::item { padding-left: 6px; }
+/*A显*/
+AXianDlg #labelBJPInfo, AXianDlg #labelGZ1Info, AXianDlg #labelGZ2Info, AXianDlg #labelGZ3Info { max-width: 150px; }
+/*为了对齐表格边线*/
+AXianDlg #pBtnScale, AXianDlg #pBtnScale_BJP { margin-right: 5px; }
+AXianDlg QLabel[marginLeft="5"] { margin-left: 2px; }
+AXianDlg #pBtn_More { margin-left: 5px; }
+
+/*三维抓取*/
+Zoom3D QPushButton { max-width: 60px; }
+
+
+/*系统配置*/
+XTWH QPushButton { min-width: 112px; } 
+
+/*目标特性菜单窗口*/
+/*ShiBieWnd, ISAR, PDSearch, FreqGraph, ImportKangGanRao, KongJianMuBiaoInfo, DaoDanMuBiaoInfo, QiDongMuBiaoInfo, LinKongMuBiaoInfo, KangGanRao, PDAntiClutter, GanRaoDisp, FreZSDisp { background: #000000; min-width: 1200px;  min-height: 1200px; }*/
+
+/*IFF/SSR*/
+IFFMode QPushButton { max-width: 64px; }
+IFFMode #pBtn_Apply { max-width: -1px; }
+
+/*置频*/
+WorkFrequencySet #stackedWidget_Freq QPushButton { max-width: 40px; }
+LuQuKongZhi_PLGL #stackedWidget_Freq QPushButton, LuQuKongZhi_PLGL #pBtn_Blue, LuQuKongZhi_PLGL #pBtn_Red, LuQuKongZhi_PLGL #pBtn_Green { margin: 0px; padding: 0px; border: none; border-image: none; width: 40px; height: 30px; border-radius: 3px; }
+
+/*航迹操作*/
+RectSel QPushButton { max-width: -1; min-width: 101; }
+
+/*群目标显示*/
+TrackGroupList { min-width: 400px; min-height: 500px; }
+
+/*阵地环境探测*/
+ClutterMap #pBtnMtiLoad, ClutterMap #pBtnManuMtiLoad, ClutterMap #pBtnManuMtiSave { min-width: 100px; }
+
+/*PD跟踪*/
+#pTar1Beam1, #pTar1Clip { min-width: 380px; }
+
+/*区域管理*/
+
+/*弹道外推*/
+FileReplay #pBtnLoad { min-width: 112px; }
+
+/*模拟训练*/
+MoNiXunLian #label, MoNiXunLian #label_23, MoNiXunLian #label_2, MoNiXunLian #label, MoNiXunLian #label_4, MoNiXunLian #label_3 { min-width: 100px; }
+
+/*记录与回放*/
+RecRepCtrl QToolButton, ChongYanCtrl QToolButton { width: 33px; height: 33px; border-image: url("../../resources/images/black/record/normal.png"); }
+RecRepCtrl QToolButton:hover, ChongYanCtrl QToolButton:hover { border-image: url("../../resources/images/black/record/hover.png"); }
+RecRepCtrl QToolButton:pressed, ChongYanCtrl QToolButton:pressed { border-image: url("../../resources/images/black/record/selected.png"); }
+RecRepCtrl #record_start { image: url("../../resources/images/black/record/record_start.png"); }
+RecRepCtrl #record_start:checked { image: url("../../resources/images/black/record/record_end.png"); }
+RecRepCtrl #replay_start, ChongYanCtrl #pBtnStart { image: url("../../resources/images/black/record/replay_start.png"); }
+RecRepCtrl #replay_start:checked, ChongYanCtrl #pBtnStart:checked { image: url("../../resources/images/black/record/replay_pause.png"); }
+RecRepCtrl #replay_end, ChongYanCtrl #pBtnPause { image: url("../../resources/images/black/record/stop.png"); }
+RecRepCtrl #replay_slow { image: url("../../resources/images/black/record/slow.png"); }
+RecRepCtrl #replay_fast_forward { image: url("../../resources/images/black/record/fast.png"); }
+RecRepCtrl #replay_next_1 { image: url("../../resources/images/black/record/next_1.png"); }
+RecRepCtrl #replay_next_2 { image: url("../../resources/images/black/record/next_2.png"); }
+RecRepCtrl #replay_previous_1 { image: url("../../resources/images/black/record/previous_1.png"); }
+RecRepCtrl #replay_previous_2 { image: url("../../resources/images/black/record/previous_2.png"); }
+RecRepCtrl #open_file { image: url("../../resources/images/black/record/open.png"); }
+RecRepCtrl #replay_set { image: url("../../resources/images/black/record/set.png"); }
+
+/*雷达站数据库*/
+RadaSiteData QToolButton { width: 33px; height: 33px; border: none; border-image: url("../../resources/images/black/RadaSiteData/normal.png"); }
+RadaSiteData QToolButton:hover { border-image: url("../../resources/images/black/record/hover.png"); }
+RadaSiteData QToolButton:pressed { border-image: url("../../resources/images/black/record/selected.png"); }
+RadaSiteData #button_newSite { image: url("../../resources/images/black/RadaSiteData/new.png"); }
+RadaSiteData #button_addToDatabase { image: url("../../resources/images/black/RadaSiteData/add.png"); }
+RadaSiteData #button_deleteFromDatabase { image: url("../../resources/images/black/RadaSiteData/delete.png"); }
+RadaSiteData #button_alterSiteInfo { image: url("../../resources/images/black/RadaSiteData/alter.png"); }
+
+/*MTI设置*/
+ZaBoYiZhi_MTI1 #groupBox_50 QPushButton { max-width: 30px; }
+
+/*状态栏*/
+#statusName { font-size: 14px; color: #ffffff; }
+#StatusLabel { font-size: 14px; }
+#StatusLabel0 { padding: 0 14px; }
+#statusVLine  { max-width: 1px; border: none; border-image: url("../../resources/images/black/Line/vertical_solid.png"); background: transparent; }
+/*工具条*/
+#toolVLine  { max-width: 1px; max-height: 23px; border: none; background: transparent; border-image: url("../../resources/images/black/Line/vertical_solid.png"); }
+
+/*TipInfo*/
+TipInfo { border: none; background: #000000; }
+
+/*截屏提示*/
+CutTipDialog { border: none; background: transparent; border-image: url("../../resources/images/black/tip.png") 0 18 18 0; border-width: 0 18 18 0; }
+CutTipDialog QLabel { font-size: 20px; color: white; }
+
+BottomToolBar { background: #000000; border-bottom: 2px solid #505050; }
+#ToolBarBtn { border: none; background: transparent; width: 30px; height: 30px; }
+#ToolBarBtn:hover { border-image: url("../../resources/images/black/CustomMenuBar/tool_hover.png"); }
+#ToolBarBtn:checked { border-image: url("../../resources/images/black/CustomMenuBar/tool_selected.png"); } 
+#PopMenuBtn { border: none; background: transparent; width: 54px; height: 24px; padding: 0; image: url("../../resources/images/black/CustomMenuBar/arrow_up.png"); border-image: url("../../resources/images/black/CustomMenuBar/zhongxin_normal.png"); } 
+#PopMenuBtn:hover { border-image: url("../../resources/images/black/CustomMenuBar/zhongxin_hover.png"); } 
+#PopMenuBtn:checked { image: url("../../resources/images/black/CustomMenuBar/arrow_down.png"); border-image: url("../../resources/images/black/CustomMenuBar/zhongxin_selected.png"); } 
+#FirstMenuBg { border: none; background: black; image: url("../../resources/images/black/CustomMenuBar/1jibeijing.png"); image-position: bottom center; } 
+#MenuBarBtn1 { border: none; background: transparent; border-image: url("../../resources/images/black/CustomMenuBar/normal.png"); }
+#MenuBarBtn1:hover { border-image: url("../../resources/images/black/CustomMenuBar/hover.png"); }
+#MenuBarBtn1:pressed { border-image: url("../../resources/images/black/CustomMenuBar/pressed.png"); }
+#MenuBarBtn1:checked { border-image: url("../../resources/images/black/CustomMenuBar/selected.png"); }
+#MenuBarBtn2 { border: none; padding: 0px; margin: 0px; background: transparent; width: 36px; height: 36px; }
+#MenuBarBtn2:hover { border-image: url("../../resources/images/black/CustomMenuBar/2hover.png"); }
+#MenuBarBtn2:checked { border-image: url("../../resources/images/black/CustomMenuBar/2selected.png"); }
+#SecondMenuBg { background: black; border-image: url("../../resources/images/black/CustomMenuBar/2jibeijing_bg.png") 0 4 14 4; border-width: 0 4 14 4; padding: 0 -4 -14 -4; } 
+#SecondLevelMenu #ArrowLabel { max-width: 22px; max-height: 10px; border: none; background: transparent; image: url("../../resources/images/black/CustomMenuBar/2jibeijing_arrow.png"); image-position: center; }
+#TextLabel { color: #ffffff; font-family: "Microsoft YaHei"; font-size: 12px; min-width: 64px; padding: 0 4px; }
+
+#FirstMenuBg > #TextLabel { padding: 0 8px; padding-bottom: 5px; min-width: 68px; }
+#SecondMenuBg > #TextLabel { padding-bottom: 2px; }
+ToolBarControlBtn { width: 30; height: 30; border: none; border-image: url("../../resources/images/black/CustomMenuBar/tool_selected.png"); image: url("../../resources/images/black/CustomMenuBar/fold/fold.png"); }
+ToolBarControlBtn { border-image: url("../../resources/images/black/CustomMenuBar/tool_hover.png"); }
+
+/*QwtPlot*/
+QwtPlot { background: #07273d; }
+#QwtCanvas { border: 1px solid #226f73; }
+
+QWidget#BiteDialog QPushButton
+{
+	border-image:url();
+}
+
+QWidget#DBFCLWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#DBFLKWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#DBFWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#HR11V1Widget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#POWERWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#XTJKWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#CabinWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#CSJWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#PingTaiCompInfo QPushButton
+{
+	border-image:url();
+}
+
+QWidget#ZhuanTaiCompInfo QPushButton
+{
+	border-image:url();
+}
+
+QWidget#ZhuanTaiWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#XHCLInfoDialog QPushButton
+{
+	border-image:url();
+}
+
+QWidget#MoDuanLengQue QPushButton
+{
+	border-image:url();
+}
+
+QWidget#PingTaiPeiDian QPushButton
+{
+	border-image:url();
+}
+
+QWidget#PeiDianKongZhiXiang QPushButton
+{
+	border-image:url();
+}
+
+QWidget#PingLvYuan QPushButton
+{
+	border-image:url();
+}
+
+QWidget#DBFCalcWidget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#SJCLQDialog QPushButton
+{
+	border-image:url();
+}
+
+QWidget#HR11V1_1Widget QPushButton
+{
+	border-image:url();
+}
+
+QWidget#SLCLQDialog_Ku QPushButton
+{
+	border-image:url();
+}
+
+QWidget#DBFInfoDialog QPushButton
+{
+	border-image:url();
+}
+
+QWidget#KuInfoDialog QPushButton
+{
+	border-image:url();
+}
+
+QWidget#DingWeiDingXiang QPushButton
+{
+	border-image:url();
+}
+
+* { font-family: "Times New Roman","Microsoft YaHei"; font-size: 14px; color: #ffffff; }
+QTabWidget{ font-family: "Times New Roman","Microsoft YaHei"; font-size: 12px; color: #ffffff; }
